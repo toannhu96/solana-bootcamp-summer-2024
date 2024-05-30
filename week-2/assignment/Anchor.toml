@@ -1,0 +1,21 @@
+[toolchain]
+
+[features]
+seeds = false
+skip-lint = false
+
+[programs.localnet]
+todo_app = "HpJ1AWGuFnSQccLRjBJuhkahZJWAQ7kEQamTuED1PefV"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "/Users/mac/.config/solana/id.json"
+
+[scripts]
+# test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/create-profile.ts"
+# test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/create-todo.ts"
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/toggle-todo.ts"
+# test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/delete-todo.ts"
